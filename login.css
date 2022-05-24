@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2f303a;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul,
+.footer-nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: 200px;
+}
+
+.main-nav a,
+.footer-nav a {
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.main-nav a:hover,
+.footer-nav a:hover {
+  color: #adadad;
+}
+
+.main-header,
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #202027;
+  border-radius: 35px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.main-header {
+  height: 140px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  margin-left: 200px;
+}
+
+.brand-logo-name {
+  font-size: 1.25em;
+  font-weight: normal;
+  margin: 0 0 0 1rem;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 25px;
+}
+
+.btn {
+    position: absolute;
+    top: 515px;
+    right: 178px;
+    width: 550px;
+    cursor: pointer;
+    background-color: #0b5295;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none; 
+  }
+  
+  .btn:hover {
+    background-color: #2180d8;
+  }
+  
+  .btn:focus {
+    background-color: #2796ff;
+  }
+
+/* join */
+
+.join-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .join-text {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-top: 120px;
+  }
+  
+  .accent-text {
+    color: #bc3a80;
+  }
+  
+  .join-form {
+    background-color: #202027;
+    width: 50vw;
+    height: 35vw;
+    max-width: 40%;
+    padding: 40px 10px;
+    border-radius: 20px;
+    margin-right: 150px;
+    margin-top: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group:last-child {
+    margin-bottom: 0;
+  }
+  
+  .input-group label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-group input {
+    outline: none;
+    background: none;
+    border: 1px solid #2e3852;
+    font-size: 1em;
+    padding: 0.2em;
+    color: inherit;
+    border-radius: 5px;
+  }
+  
+  .input-group input:focus {
+    border-color: #596da0;
+  }
+
+
+  select {
+    outline: none;
+    background: #202027;
+    color: #fff;
+    border: 1px solid #2e3852;
+    padding: 0.2em;
+    font-size: 1em;
+    border-radius: 5px;
+  }
+  
+  .circles {
+    position: relative;
+  }
+  
+  .join-circle-1 {
+    position: absolute;
+    overflow: hidden;
+    width: 35vw;
+    height: 35vw;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .join-circle-1::before {
+    content: "";
+    transform: translateX(-20%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgb(188, 58, 128, 0.1);
+  }
+  
+  .join-circle-2 {
+    position: absolute;
+    overflow: hidden;
+    width: 30vw;
+    height: 30vw;
+    top: 0;
+    left: 30vw;
+    z-index: -1;
+  }
+  
+  .join-circle-2::before {
+    content: "";
+    transform: translateY(-30%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgb(52, 87, 178, 0.1);
+  }
+  
+  @media (max-width: 992px) {
+    .main-header,
+    .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+  
+    .main-footer {
+      height: 140px;
+    }
+  
+    .hero-section {
+      flex-direction: column-reverse;
+    }
+  
+    .hero-section .call-to-action {
+      align-items: center;
+    }
+  
+    .title {
+      font-size: 2em;
+      margin-bottom: 0.5rem;
+    }
+  
+    .subtitle {
+      font-size: 1em;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    
+    @media (max-height: 500px) {
+    .hero-section .lady-image {
+      display: none;
+    }
+  }
+  
+    .discover-section {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .discover-section .covers-image {
+      margin: 2rem 0 0;
+      height: 30vh;
+      width: auto;
+    }
+  
+    .icon-section {
+      justify-content: center;
+    }
+  
+    .join-section {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .join-text {
+      font-size: 2.5em;
+    }
+  
+    .join-form {
+      width: 80vw;
+      max-width: inherit;
+      margin: 2rem 0;
+    }
+  }
+  
